@@ -15,11 +15,51 @@ To deploy this project, follow these steps:
 
 1. Log in to the AWS Management Console and navigate to Lightsail.
 
-2. Click the "Create Instance" button and select the "WordPress" blueprint.
+2. Click the "Create Instance" button and select the "OS only" and "Ubuntu" blueprint.
 
 3. Choose your preferred instance plan, location, and launch script, and then click "Create Instance". If you are using the free tier, be sure to select an instance plan that is eligible for the free tier, such as the "WordPress" plan with 512 MB RAM. The instance will be created and launched.
 
 4. Once the instance is running, click the "Connect" button next to your instance, and then click "Connect using SSH". A browser-based terminal window will open.
+
+## SSH access
+
+#Local Computer
+Open Command Prompt or Terminal on your local computer.
+
+Enter the following command to create a key pair.
+
+```
+ssh-keygen -t rsa
+```
+
+Specify a directory location on your computer where the key pair should be saved.
+
+For example:
+
+On Windows: C:\Users\<UserName>\.ssh\<KeyPairName>
+
+On macOS, Linux or Unix: /home/<UserName>/.ssh/<KeyPairName>
+
+Replace <UserName> with the name of the user you are currently signed in as, and replace <KeyPairName> with the name of your new key pair.
+
+# Lightsail
+
+Sign in to the Lightsail console.
+
+Choose the Instances tab on the Lightsail home page.
+
+Choose the browser-based SSH client icon for the instance that you want to connect to.
+
+Choose the browser based SSH client
+After you're connected, enter the following command to edit the authorized_keys file using the text editor of your choice.
+
+```
+sudo nano ~/.ssh/authorized_keys
+```
+
+Then copy your public key into your file at the end. 
+
+You should see a result similar to the following example, which shows the current public keys configured on your instance. In our case, the Lightsail default key for the AWS Region in which the instance was created in, is the only public key configured on the instance.
 
 5. Clone the repository to your instance using the following command:
 
