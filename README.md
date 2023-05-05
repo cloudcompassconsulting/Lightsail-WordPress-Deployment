@@ -17,7 +17,7 @@ To deploy this project, follow these steps:
 
 2. Click the "Create Instance" button and select the "WordPress" blueprint.
 
-3. Choose your preferred instance plan, location, and launch script, and then click "Create Instance". The instance will be created and launched.
+3. Choose your preferred instance plan, location, and launch script, and then click "Create Instance". If you are using the free tier, be sure to select an instance plan that is eligible for the free tier, such as the "WordPress" plan with 512 MB RAM. The instance will be created and launched.
 
 4. Once the instance is running, click the "Connect" button next to your instance, and then click "Connect using SSH". A browser-based terminal window will open.
 
