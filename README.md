@@ -24,7 +24,7 @@ To deploy this project, follow these steps:
 5. Clone the repository to your instance using the following command:
 
    ```
-   git clone https://github.com/your-username/lightsail-wordpress-deployment.git
+   git clone https://github.com/cloudcompassconsulting/lightsail-wordpress-deployment.git
    ```
 
 6. Navigate to the project directory using the following command:
