@@ -35,10 +35,5 @@ sudo wp core install --path=/var/www/html --url="$SITE_URL" --title="$SITE_TITLE
 sudo chown -R www-data:www-data /var/www/html/
 sudo chmod -R 755 /var/www/html/
 
-# Create .gitignore file
-echo ".DS_Store" > /var/www/html/.gitignore
-echo "wp-config.php" >> /var/www/html/.gitignore
-echo "wp-content/uploads" >> /var/www/html/.gitignore
-
 # Restart Apache
 sudo service apache2 restart
