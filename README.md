@@ -42,6 +42,12 @@ On macOS, Linux or Unix: /home/<UserName>/.ssh/<KeyPairName>
 
 Replace <UserName> with the name of the user you are currently signed in as, and replace <KeyPairName> with the name of your new key pair.
 
+Then copy the public key in Windows
+
+```
+type C:\Users\Lucia> type C:\Users\<UserName>/.ssh/<KeyPairName>.pub
+```
+
 # Lightsail
 
 Sign in to the Lightsail console.
