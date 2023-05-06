@@ -65,7 +65,12 @@ sudo nano ~/.ssh/authorized_keys
 
 Then copy your public key into your file at the end. 
 
-You should see a result similar to the following example, which shows the current public keys configured on your instance. In our case, the Lightsail default key for the AWS Region in which the instance was created in, is the only public key configured on the instance.
+Now ssh from local terminal to you instance using username and public IP address
+   
+```
+ssh <user>@<IPAdress>
+```
+   
 
 5. Clone the repository to your instance using the following command:
 
