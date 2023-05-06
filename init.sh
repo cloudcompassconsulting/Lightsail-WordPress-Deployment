@@ -25,7 +25,7 @@ sudo mv wp-cli.phar /usr/local/bin/wp
 
 # Download and install WordPress
 sudo wp core download --path=/var/www/html --allow-root
-sudo wp config create --path=/var/www/html --dbname="$DB_NAME" --dbuser="$DB_USER" --dbpass="$DB_PASSWORD" --dbhost=localhost --dbprefix=wp_ --extra-php <<PHP
+sudo wp config create --path=/var/www/html --dbname="$DB_NAME" --dbuser="$DB_USER" --dbpass="$DB_PASSWORD" --dbhost=localhost --dbprefix=wp_ --extra-php --allow-root <<PHP
 define( 'WP_HOME', '$SITE_URL' );
 define( 'WP_SITEURL', '$SITE_URL' );
 PHP
