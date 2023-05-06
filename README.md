@@ -87,6 +87,15 @@ So, on a terminal window, type the following:
    sudo adduser wordpress
    ```
  You will be prompted to enter a password for the new user, Full Name, Room number and phone details. You can press Enter if you don’t want to enter a value. 
+   
+Add the new user to the sudo group
+Your new user above is created with regular privileges and if you try to run any sudo task, you will get an error like, “wordpress is not in the sudoers file.  This incident will be reported.” In order to allow the user to do administrative tasks e.g. rebooting the server, creating new users or installing applications, we need to run the command below:
+
+   ```
+   sudo usermod -aG sudo wordpress
+   ```
+   
+Remember to replace “wordpress” with the username that you created above.Your new user should be successfully added to the sudo program.
 
 5. Clone the repository to your instance using the following command:
 
