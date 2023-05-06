@@ -77,11 +77,16 @@ Once you are connected to the server. Run the command adduser to create your new
 
 So, on a terminal window, type the following:
 
-$ sudo adduser <username>
-Remember to replace username with the preferred name of your new user. For instance, if you want to add a new user called ‘wordpress’ the syntax should be:
-
-$ sudo adduser wordpress
-You will be prompted to enter a password for the new user, Full Name, Room number and phone details. You can press Enter if you don’t want to enter a value. 
+   ```
+   sudo adduser <username>
+   ```
+ 
+ Remember to replace username with the preferred name of your new user. For instance, if you want to add a new user called ‘wordpress’ the syntax should be:
+ 
+   ```
+   sudo adduser wordpress
+   ```
+ You will be prompted to enter a password for the new user, Full Name, Room number and phone details. You can press Enter if you don’t want to enter a value. 
 
 5. Clone the repository to your instance using the following command:
 
