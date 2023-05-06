@@ -97,6 +97,14 @@ Your new user above is created with regular privileges and if you try to run any
    
 Remember to replace “wordpress” with the username that you created above.Your new user should be successfully added to the sudo program.
 
+TestSwitch to the new user
+We can use the su command on our Ubuntu 18.04 server to switch to the new user that we created above; su is an acronym for substitute user. It allows the currently logged in user to change the session without having to logout first.
+
+To do this, we run the command below:
+   ```
+   su - wordpress
+   ```
+   
 5. Clone the repository to your instance using the following command:
 
    ```
